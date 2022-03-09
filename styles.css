@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --lightgray: hsl(0, 0%, 95%);
+}
+body{
+    background-color: var(--lightgray);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width:100%;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    width:70%;
+    height:53vh;
+
+}
+.sedans{
+    background-color: var(--orange);
+}
+.sedanbtn{
+    color: var(--orange)
+}
+.sedanbtn:hover{
+    background-color: var(--orange);
+    border: 1px solid var(--lightgray);
+    color:var(--lightgray);
+    cursor: pointer;
+}
+.container button{
+    margin-top: 74px;
+    width: 155px;
+    height: 52px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.suvs{
+    background-color: var(--cyan);   
+}
+.padd{
+    padding: 46px;
+    padding-right: 64px;
+}
+.suvbtn{
+    color: var(--cyan)
+}
+.suvbtn:hover{
+    background-color: var(--cyan);
+    border: 1px solid var(--lightgray);
+    color:var(--lightgray);
+    cursor: pointer;
+}
+
+.luxury{
+    background-color: var(--verydarkcyan);
+}
+.luxurybtn{
+    color: var(--verydarkcyan)
+}
+.luxurybtn:hover{
+    background-color: var(--verydarkcyan);
+    border: 1px solid var(--lightgray);
+    color:var(--lightgray);
+    cursor: pointer;
+}
+h1{
+    color: var(--lightgray);
+    text-transform: uppercase;
+    margin: 31px 0px;
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 43px;
+}
+p{
+    color:var(--transparentwhite);
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+@media(max-width:1189px){
+    body{
+        height:70vh;
+    }
+    .container{
+        flex-direction: column;
+        width:303px
+    }
+    .padd{
+        padding: 41px;
+        padding-right: 35px;
+        height:40vh;
+    }
+    .container button{
+        margin-top:26px;
+    }
+}
